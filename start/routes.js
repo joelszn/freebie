@@ -23,6 +23,8 @@ Route.get('/', () => {
 Route.group(() => {
   Route.post('/user/register', 'UserController.register')
   Route.post('/user/login', 'UserController.login')
+  Route.post('/company/login', 'CompanyController.login')
+  Route.post('/company/register', 'CompanyController.register')
   Route.get('/user/register', ({ request }) => {
     return {
       message: 'hit'

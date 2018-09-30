@@ -76,6 +76,17 @@ module.exports = {
     }
   },
 
+  company: {
+    serializer: 'lucid',
+    model: 'App/Models/Company',
+    scheme: 'jwt',
+    uid: 'email',
+    password: 'password',
+    options: {
+      secret: Env.get('APP_KEY')
+    }
+  },
+
   /*
   |--------------------------------------------------------------------------
   | Api
